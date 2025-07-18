@@ -1,0 +1,69 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": ["Oi", "Olá", "Bom dia", "Boa tarde", "Boa noite", "E aí", "Opa"],
+      "responses": ["Olá! Sou a assistente virtual da SUBER. Como posso te ajudar a encontrar o carro ideal para suas corridas?", "Oi! Bem-vindo(a) à SUBER. Em que posso ser útil hoje?"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Tchau", "Até mais", "Adeus", "Até logo", "Fim"],
+      "responses": ["Até mais! Precisando de um carro, é só chamar. Boas corridas!", "Tchau! Dirija com segurança e conte com a SUBER."]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": ["Obrigado", "Valeu", "Muito obrigado", "Obrigada", "Agradecido"],
+      "responses": ["De nada! Se tiver mais alguma dúvida, estou aqui para ajudar.", "Por nada! O prazer é meu em ajudar."]
+    },
+    {
+      "tag": "ver_planos",
+      "patterns": ["Quais são os planos?", "Ver planos", "Quero saber os preços", "Como funcionam os aluguéis?", "Valores", "Categorias", "Qual o valor da diária?"],
+      "responses": ["Trabalhamos com 4 categorias de veículos: <strong>Popular, Intermediário, Luxo e Van</strong>. Nossos aluguéis são cobrados por diária. Sobre qual categoria você gostaria de saber mais?"]
+    },
+    {
+      "tag": "plano_popular",
+      "patterns": ["Popular", "Categoria popular", "Quanto custa o popular"],
+      "responses": ["A categoria <strong>Popular</strong> inclui modelos como Onix, HB20 e Ka. O valor da diária é de <strong>R$ 45</strong>."]
+    },
+    {
+      "tag": "plano_intermediario",
+      "patterns": ["Intermediário", "Categoria intermediária", "Preço do intermediário", "Quanto custa o intermediario"],
+      "responses": ["A categoria <strong>Intermediário</strong>, com modelos como Civic, Corolla e Cruze, tem a diária de <strong>R$ 65</strong>."]
+    },
+    {
+      "tag": "plano_luxo",
+      "patterns": ["Luxo", "Categoria luxo", "Preço do luxo", "Quanto custa o de luxo"],
+      "responses": ["Para a categoria <strong>Luxo</strong>, temos BMW, Audi e Mercedes. O valor da diária é de <strong>R$ 120</strong>."]
+    },
+    {
+      "tag": "plano_van",
+      "patterns": ["Van", "Categoria van", "Preço da van", "Quanto custa a van"],
+      "responses": ["Nossa categoria de <strong>Vans</strong> (Ducato, Master, Sprinter) tem a diária de <strong>R$ 85</strong>."]
+    },
+    {
+      "tag": "ver_modelos",
+      "patterns": ["Quais os modelos de carro?", "Ver modelos", "Quais carros vocês tem?", "Mostre os carros"],
+      "responses": ["Claro! Nossa frota é dividida em:\n- <strong>Popular:</strong> Onix, HB20, Ka\n- <strong>Intermediário:</strong> Civic, Corolla, Cruze\n- <strong>Luxo:</strong> BMW, Audi, Mercedes\n- <strong>Van:</strong> Ducato, Master, Sprinter"]
+    },
+    {
+      "tag": "requisitos",
+      "patterns": ["O que precisa para alugar?", "Quais os requisitos?", "Documentos necessários", "Como faço pra alugar"],
+      "responses": ["Para alugar com a SUBER, você precisa atender a estes requisitos:\n- CNH definitiva com a observação 'Exerce Atividade Remunerada' (EAR).\n- Idade mínima de 21 anos.\n- Comprovante de residência.\n- Passar por nossa análise de crédito."]
+    },
+    {
+      "tag": "diferenciais",
+      "patterns": ["O que está incluso?", "O aluguel cobre o que?", "Tem seguro?", "E a manutenção?"],
+      "responses": ["Nosso maior diferencial é a tranquilidade que oferecemos! Todos os planos incluem: <strong>manutenção preventiva e corretiva, seguro total (roubo, furto, colisão) e suporte 24 horas por dia, 7 dias por semana</strong>, especializado em motoristas de aplicativo."]
+    },
+    {
+      "tag": "como_alugar",
+      "patterns": ["Como eu alugo?", "Quero alugar um carro", "Iniciar aluguel", "Quero contratar"],
+      "responses": ["É muito fácil! Basta escolher a categoria desejada no nosso site e clicar em 'Alugue Agora'. Você preencherá um cadastro rápido e nossa equipe entrará em contato para finalizar o processo. Simples assim!"]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["Desculpe, não entendi sua pergunta. Você poderia tentar reformular? Posso te ajudar com informações sobre nossos planos, preços, requisitos e como alugar."]
+    }
+  ]
+}
