@@ -2,8 +2,8 @@
   "intents": [
     {
       "tag": "saudacao",
-      "patterns": ["Oi", "Olá", "Bom dia", "Boa tarde", "Boa noite", "E aí", "Opa"],
-      "responses": ["Olá! Sou a assistente virtual da SUBER. Como posso te ajudar a encontrar o carro ideal para suas corridas?", "Oi! Bem-vindo(a) à SUBER. Em que posso ser útil hoje?"]
+      "patterns": ["Oi", "Olá", "Bom dia", "Boa tarde", "Boa noite", "E aí", "Opa", "Começar"],
+      "responses": ["Olá! Sou a assistente virtual da SUBER. Para começar, posso te ajudar com:\n\n- Nossos <strong>planos e categorias</strong>\n- <strong>Requisitos</strong> para alugar um carro\n- Como funciona nosso <strong>seguro com franquia zero</strong>\n- Detalhes sobre a <strong>qualidade da nossa frota</strong>\n\nÉ só me perguntar o que você precisa saber!"]
     },
     {
       "tag": "despedida",
@@ -17,7 +17,7 @@
     },
     {
       "tag": "ver_planos",
-      "patterns": ["Quais são os planos?", "Ver planos", "Quero saber os preços", "Como funcionam os aluguéis?", "Valores", "Categorias", "Qual o valor da diária?"],
+      "patterns": ["Quais são os planos?", "Ver planos", "Quero saber os preços", "Como funcionam os aluguéis?", "Valores", "Categorias", "Qual o valor da diária?", "planos e categorias"],
       "responses": ["Trabalhamos com 4 categorias de veículos: <strong>Popular, Intermediário, Luxo e Van</strong>. Nossos aluguéis são cobrados por diária. Sobre qual categoria você gostaria de saber mais?"]
     },
     {
@@ -38,7 +38,7 @@
     {
       "tag": "plano_van",
       "patterns": ["Van", "Categoria van", "Preço da van", "Quanto custa a van"],
-      "responses": ["Nossa categoria de <strong>Vans</strong> (Ducato, Master, Sprinter) tem a diária de <strong>R$ 85</strong>."]
+      "responses": ["Nossa categoria de <strong>Vans</strong> (Ducato, Master, Sprinter) tem a diária de <strong>R$ 85</strong>. Para esta categoria, é necessário ter CNH categoria D."]
     },
     {
       "tag": "ver_modelos",
@@ -47,18 +47,33 @@
     },
     {
       "tag": "requisitos",
-      "patterns": ["O que precisa para alugar?", "Quais os requisitos?", "Documentos necessários", "Como faço pra alugar"],
-      "responses": ["Para alugar com a SUBER, você precisa atender a estes requisitos:\n- CNH definitiva com a observação 'Exerce Atividade Remunerada' (EAR).\n- Idade mínima de 21 anos.\n- Comprovante de residência.\n- Passar por nossa análise de crédito."]
+      "patterns": ["O que precisa para alugar?", "Quais os requisitos?", "Documentos necessários", "requisitos para alugar um carro"],
+      "responses": ["Para alugar com a SUBER, os principais requisitos são:\n- Ter entre <strong>21 e 59 anos</strong>.\n- Possuir no mínimo <strong>1 ano de experiência</strong> como motorista.\n- Apresentar CNH (categoria B), CPF e comprovante de residência."]
     },
     {
-      "tag": "diferenciais",
-      "patterns": ["O que está incluso?", "O aluguel cobre o que?", "Tem seguro?", "E a manutenção?"],
-      "responses": ["Nosso maior diferencial é a tranquilidade que oferecemos! Todos os planos incluem: <strong>manutenção preventiva e corretiva, seguro total (roubo, furto, colisão) e suporte 24 horas por dia, 7 dias por semana</strong>, especializado em motoristas de aplicativo."]
+      "tag": "sobre_aprovacao",
+      "patterns": ["Como funciona a aprovação?", "Quanto tempo demora a análise?", "Vocês checam antecedentes?"],
+      "responses": ["Nosso processo de aprovação inclui análise de crédito, verificação de antecedentes criminais e do histórico de condução. O tempo médio para a resposta é de <strong>48 horas</strong>."]
+    },
+    {
+      "tag": "custos_inclusos",
+      "patterns": ["O que está incluso no preço?", "O que eu pago por fora?", "Combustível está incluso?", "E as multas?", "Tenho que pagar a manutenção?"],
+      "responses": ["O valor da diária é completo! Já inclui <strong>manutenção preventiva e seguro total</strong>. Os únicos custos por sua conta são o <strong>combustível</strong> e eventuais <strong>multas</strong> de trânsito."]
+    },
+    {
+      "tag": "detalhes_seguro",
+      "patterns": ["Como funciona o seguro?", "O seguro tem franquia?", "Estou coberto contra roubo?", "seguro com franquia zero"],
+      "responses": ["Sim, nosso seguro tem cobertura total para acidentes, roubo e furto. E o melhor: a <strong>franquia é zerada</strong> para o motorista!"]
+    },
+    {
+      "tag": "qualidade_frota",
+      "patterns": ["Os carros são novos?", "Qual a idade dos carros?", "Os carros tem ar condicionado?", "qualidade da nossa frota"],
+      "responses": ["Prezamos pela qualidade! Nossa frota tem no máximo <strong>6 anos de uso</strong> e 100% dos veículos possuem GPS. Além disso, 95% deles contam com ar condicionado para o seu conforto."]
     },
     {
       "tag": "como_alugar",
       "patterns": ["Como eu alugo?", "Quero alugar um carro", "Iniciar aluguel", "Quero contratar"],
-      "responses": ["É muito fácil! Basta escolher a categoria desejada no nosso site e clicar em 'Alugue Agora'. Você preencherá um cadastro rápido e nossa equipe entrará em contato para finalizar o processo. Simples assim!"]
+      "responses": ["É muito fácil! Basta escolher a categoria desejada no nosso site e clicar em 'Alugue Agora'. Você preencherá um cadastro rápido com seus documentos (CNH, CPF, comprovante de residência) e nossa equipe analisará em até 48 horas."]
     },
     {
       "tag": "fallback",
