@@ -17,7 +17,7 @@
     },
     {
       "tag": "ver_planos",
-      "patterns": ["Quais são os planos?", "Ver planos", "Quero saber os preços", "Como funcionam os aluguéis?", "Valores", "Categorias", "Qual o valor da diária?", "planos e categorias"],
+      "patterns": ["Quais categorias?","Quais são os planos?", "Ver planos", "Quero saber os preços", "Como funcionam os aluguéis?", "Valores", "Categorias", "Qual o valor da diária?", "planos e categorias"],
       "responses": ["Trabalhamos com 4 categorias de veículos: <strong>Popular, Intermediário, Luxo e Van</strong>. Nossos aluguéis são cobrados por diária. Sobre qual categoria você gostaria de saber mais?"]
     },
     {
@@ -42,28 +42,28 @@
     },
     {
       "tag": "ver_modelos",
-      "patterns": ["Quais os modelos de carro?", "Ver modelos", "Quais carros vocês tem?", "Mostre os carros"],
+      "patterns": ["Quais modelos?","Modelos","Quais os modelos de carro?", "Ver modelos", "Quais carros vocês tem?", "Mostre os carros"],
       "responses": ["Claro! Nossa frota é dividida em:\n- <strong>Popular:</strong> Onix, HB20, Ka\n- <strong>Intermediário:</strong> Civic, Corolla, Cruze\n- <strong>Luxo:</strong> BMW, Audi, Mercedes\n- <strong>Van:</strong> Ducato, Master, Sprinter"]
     },
     {
       "tag": "requisitos",
-      "patterns": ["O que precisa para alugar?", "Quais os requisitos?", "Documentos necessários", "requisitos para alugar um carro"],
+      "patterns": ["O que precisa?","Documentos","Requisitos","O que precisa para alugar?", "Quais os requisitos?", "Documentos necessários", "requisitos para alugar um carro"],
       "responses": ["Para alugar com a SUBER, os principais requisitos são:\n- Ter entre <strong>21 e 59 anos</strong>.\n- Possuir no mínimo <strong>1 ano de experiência</strong> como motorista.\n- Apresentar CNH (categoria B), CPF e comprovante de residência."]
     },
     {
       "tag": "sobre_aprovacao",
-      "patterns": ["Como funciona a aprovação?", "Quanto tempo demora a análise?", "Vocês checam antecedentes?"],
+      "patterns": ["Antecedentes","Aprovação","Como funciona a aprovação?", "Quanto tempo demora a análise?", "Vocês checam antecedentes?"],
       "responses": ["Nosso processo de aprovação inclui análise de crédito, verificação de antecedentes criminais e do histórico de condução. O tempo médio para a resposta é de <strong>48 horas</strong>."]
     },
     {
       "tag": "custos_inclusos",
-      "patterns": ["O que está incluso no preço?", "O que eu pago por fora?", "Combustível está incluso?", "E as multas?", "Tenho que pagar a manutenção?"],
+      "patterns": ["Combustível","Manutenção","O que está incluso?","O que está incluso no preço?", "O que eu pago por fora?", "Combustível está incluso?", "E as multas?", "Tenho que pagar a manutenção?,"],
       "responses": ["O valor da diária é completo! Já inclui <strong>manutenção preventiva e seguro total</strong>. Os únicos custos por sua conta são o <strong>combustível</strong> e eventuais <strong>multas</strong> de trânsito."]
     },
     {
       "tag": "detalhes_seguro",
       "patterns": ["Como funciona o seguro?", "O seguro tem franquia?", "Estou coberto contra roubo?", "seguro com franquia zero"],
-      "responses": ["Sim, nosso seguro tem cobertura total para acidentes, roubo e furto. E o melhor: a <strong>franquia é zerada</strong> para o motorista!"]
+      "responses": ["Nosso seguro tem cobertura total para acidentes, roubo e furto. E o melhor: a <strong>franquia é zerada</strong> para o motorista!"]
     },
     {
       "tag": "qualidade_frota",
@@ -72,7 +72,7 @@
     },
     {
       "tag": "como_alugar",
-      "patterns": ["Como eu alugo?", "Quero alugar um carro", "Iniciar aluguel", "Quero contratar"],
+      "patterns": ["Onde alugar?","Como alugar?","Alugar","Como eu alugo?", "Quero alugar um carro", "Iniciar aluguel", "Quero contratar"],
       "responses": ["É muito fácil! Basta escolher a categoria desejada no nosso site e clicar em 'Alugue Agora'. Você preencherá um cadastro rápido com seus documentos (CNH, CPF, comprovante de residência) e nossa equipe analisará em até 48 horas."]
     },
     {

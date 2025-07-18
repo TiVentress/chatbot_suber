@@ -28,18 +28,21 @@ def home():
 def chat():
     """Rota que recebe a mensagem do usuário e retorna a resposta do chatbot."""
     try:
-        user_message = request.json['message']
+        user_message = request.json['message'].strip()
         
-        probabilities = model.predict_proba([user_message])[0]
-        max_prob = max(probabilities)
-        
-        CONFIDENCE_THRESHOLD = 0.1
-        
-        if max_prob > CONFIDENCE_THRESHOLD:
-            tag = model.predict([user_message])[0]
-        else:
+        if len(user_message) < 3:
             tag = FALLBACK_TAG
+        else:
+            probabilities = model.predict_proba([user_message])[0]
+            max_prob = max(probabilities)
             
+            CONFIDENCE_THRESHOLD = 0.1
+            
+            if max_prob > CONFIDENCE_THRESHOLD:
+                tag = model.predict([user_message])[0]
+            else:
+                tag = FALLBACK_TAG
+        
         response = random.choice(responses_dict.get(tag, responses_dict[FALLBACK_TAG]))
         
         return jsonify({'response': response})
